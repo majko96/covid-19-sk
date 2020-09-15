@@ -1,0 +1,1379 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbarThumbHorizontal="@null">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:padding="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Covid-19\nSK"
+                                android:textColor="#ffffffff" />
+
+                            <ImageButton
+                                android:id="@+id/button1"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="top"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="fitCenter"
+                                android:background="@drawable/test"
+                                />
+
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/cr"
+                            android:scaleType="centerInside"
+                            android:layout_marginLeft="100dp"/>
+
+                            <TextView
+                                android:id="@+id/date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:padding="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:text=""
+                                android:textColor="#ffffffff" />
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#ff0000"
+                                android:layout_gravity="center"
+                                />
+
+
+                            <TextView
+                                style="@style/text_views"
+                                android:text="Nových dnes:"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:gravity="left"
+                                android:textAlignment="gravity" />
+
+
+                            <TextView
+                                android:id="@+id/newTotal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:textAlignment="gravity"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#6B5B95"
+                                android:layout_gravity="center"
+                                />
+
+
+
+                            <TextView
+                                android:text="Nakazených:"
+                                style="@style/text_views"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:gravity="left"
+                                android:textAlignment="gravity" />
+
+
+                            <TextView
+                                android:id="@+id/txt_infected"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:textAlignment="gravity"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#EFC050"
+                                android:layout_gravity="center"
+                                />
+
+
+
+                            <TextView
+                                android:text="Testovaných:"
+                                style="@style/text_views"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/txt_tested"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:textAlignment="gravity"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#009B77"
+                                android:layout_gravity="center"
+                                />
+
+
+
+                            <TextView
+                                android:text="Vyliečených:"
+                                style="@style/text_views"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp" />
+
+
+                            <TextView
+                                android:id="@+id/txtRecovered"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:textAlignment="gravity"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#DFCFBE"
+                                android:layout_gravity="center"
+                                />
+
+
+
+                            <TextView
+                                android:text="Úmrtí:"
+                                style="@style/text_views"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp" />
+
+
+                            <TextView
+                                android:id="@+id/txtDeceased"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:textAlignment="gravity"
+                                android:textColor="#fff"/>
+
+
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <TextView
+                            android:id="@+id/region1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Nakazených dnes:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                style="@style/text_views"
+                                android:text="Celkovo nakazených:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp" />
+
+
+                            <TextView
+                                android:id="@+id/totalInfected1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#FF0000" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <TextView
+                            android:id="@+id/region2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Nakazených dnes:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Celkovo nakazených:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new2Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <TextView
+                            android:id="@+id/region3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Nakazených dnes:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Celkovo nakazených:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new3Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <TextView
+                            android:id="@+id/region4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Nakazených dnes:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Celkovo nakazených:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new4Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <TextView
+                            android:id="@+id/region5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Nakazených dnes:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Celkovo nakazených:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new5Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <TextView
+                            android:id="@+id/region6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Nakazených dnes:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Celkovo nakazených:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new6Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <TextView
+                            android:id="@+id/region7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Nakazených dnes:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Celkovo nakazených:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new7Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <TextView
+                            android:id="@+id/region8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Nakazených dnes:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FF0000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+
+
+                            <TextView
+                                android:text="Celkovo nakazených:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"/>
+
+
+                            <TextView
+                                android:id="@+id/new8Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <!-- Media -->
+                    <WebView
+                        android:id="@+id/webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </WebView>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>
+
+
+
+
+
+
+
