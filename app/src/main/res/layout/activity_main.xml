@@ -124,7 +124,7 @@
 
                             <TextView
                                 style="@style/text_views"
-                                android:text="Nových dnes:"
+                                android:text="@string/todayNews"
                                 android:layout_width="0dp"
                                 android:layout_marginLeft="5dp"
                                 android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
 
 
                             <TextView
-                                android:text="Nakazených:"
+                                android:text="@string/infected"
                                 style="@style/text_views"
                                 android:layout_width="0dp"
                                 android:layout_marginLeft="5dp"
@@ -213,7 +213,7 @@
 
 
                             <TextView
-                                android:text="Testovaných:"
+                                android:text="@string/tested"
                                 style="@style/text_views"
                                 android:layout_width="0dp"
                                 android:layout_marginLeft="5dp"
@@ -258,7 +258,7 @@
 
 
                             <TextView
-                                android:text="Vyliečených:"
+                                android:text="@string/recovered"
                                 style="@style/text_views"
                                 android:layout_width="0dp"
                                 android:layout_marginLeft="5dp"
@@ -301,7 +301,7 @@
 
 
                             <TextView
-                                android:text="Úmrtí:"
+                                android:text="@string/deceased"
                                 style="@style/text_views"
                                 android:layout_width="0dp"
                                 android:layout_marginLeft="5dp"
@@ -403,15 +403,14 @@
 
 
                             <TextView
-                                android:text="Nakazených dnes:"
+                                android:text="@string/todayInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -439,7 +438,7 @@
 
                             <TextView
                                 style="@style/text_views"
-                                android:text="Celkovo nakazených:"
+                                android:text="@string/totalInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -456,8 +455,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:textColor="#FFF"/>
+                                style="@style/text_views"/>
 
                         </LinearLayout>
 
@@ -508,8 +506,7 @@
                             android:gravity="center_horizontal"
                             android:layout_weight="1"
                             android:layout_marginTop="0dp"
-                            android:textSize="20sp"
-                            android:textColor="#fff"/>
+                            style="@style/text_views"/>
 
 
                         <LinearLayout
@@ -523,15 +520,14 @@
 
 
                             <TextView
-                                android:text="Nakazených dnes:"
+                                android:text="@string/todayInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -558,15 +554,14 @@
 
 
                             <TextView
-                                android:text="Celkovo nakazených:"
+                                android:text="@string/totalInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -577,8 +572,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:textColor="#FFF"/>
+                                style="@style/text_views"/>
 
                         </LinearLayout>
                         <View
@@ -628,8 +622,7 @@
                             android:gravity="center_horizontal"
                             android:layout_weight="1"
                             android:layout_marginTop="0dp"
-                            android:textSize="20sp"
-                            android:textColor="#fff"/>
+                            style="@style/text_views"/>
 
 
                         <LinearLayout
@@ -643,15 +636,14 @@
 
 
                             <TextView
-                                android:text="Nakazených dnes:"
+                                android:text="@string/todayInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -678,15 +670,14 @@
 
 
                             <TextView
-                                android:text="Celkovo nakazených:"
+                                android:text="@string/totalInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -697,8 +688,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:textColor="#FFF"/>
+                                style="@style/text_views"/>
 
                         </LinearLayout>
 
@@ -749,8 +739,7 @@
                             android:gravity="center_horizontal"
                             android:layout_weight="1"
                             android:layout_marginTop="0dp"
-                            android:textSize="20sp"
-                            android:textColor="#fff"/>
+                            style="@style/text_views"/>
 
 
                         <LinearLayout
@@ -764,15 +753,14 @@
 
 
                             <TextView
-                                android:text="Nakazených dnes:"
+                                android:text="@string/todayInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -799,15 +787,14 @@
 
 
                             <TextView
-                                android:text="Celkovo nakazených:"
+                                android:text="@string/totalInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -818,8 +805,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:textColor="#FFF"/>
+                                style="@style/text_views"/>
 
                         </LinearLayout>
 
@@ -870,8 +856,7 @@
                             android:gravity="center_horizontal"
                             android:layout_weight="1"
                             android:layout_marginTop="0dp"
-                            android:textSize="20sp"
-                            android:textColor="#fff"/>
+                            style="@style/text_views"/>
 
 
                         <LinearLayout
@@ -885,15 +870,14 @@
 
 
                             <TextView
-                                android:text="Nakazených dnes:"
+                                android:text="@string/todayInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -920,15 +904,14 @@
 
 
                             <TextView
-                                android:text="Celkovo nakazených:"
+                                android:text="@string/totalInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -939,8 +922,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:textColor="#FFF"/>
+                                style="@style/text_views"/>
 
                         </LinearLayout>
 
@@ -991,8 +973,7 @@
                             android:gravity="center_horizontal"
                             android:layout_weight="1"
                             android:layout_marginTop="0dp"
-                            android:textSize="20sp"
-                            android:textColor="#fff"/>
+                            style="@style/text_views"/>
 
 
                         <LinearLayout
@@ -1006,15 +987,14 @@
 
 
                             <TextView
-                                android:text="Nakazených dnes:"
+                                android:text="@string/todayInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -1041,15 +1021,14 @@
 
 
                             <TextView
-                                android:text="Celkovo nakazených:"
+                                android:text="@string/totalInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -1060,8 +1039,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:textColor="#FFF"/>
+                                style="@style/text_views"/>
 
                         </LinearLayout>
 
@@ -1112,8 +1090,7 @@
                             android:gravity="center_horizontal"
                             android:layout_weight="1"
                             android:layout_marginTop="0dp"
-                            android:textSize="20sp"
-                            android:textColor="#fff"/>
+                            style="@style/text_views"/>
 
 
                         <LinearLayout
@@ -1127,15 +1104,14 @@
 
 
                             <TextView
-                                android:text="Nakazených dnes:"
+                                android:text="@string/todayInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -1162,15 +1138,14 @@
 
 
                             <TextView
-                                android:text="Celkovo nakazených:"
+                                android:text="@string/totalInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -1181,8 +1156,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:textColor="#FFF"/>
+                                style="@style/text_views"/>
 
                         </LinearLayout>
 
@@ -1233,8 +1207,7 @@
                             android:gravity="center_horizontal"
                             android:layout_weight="1"
                             android:layout_marginTop="0dp"
-                            android:textSize="20sp"
-                            android:textColor="#fff"/>
+                            style="@style/text_views"/>
 
 
                         <LinearLayout
@@ -1248,15 +1221,14 @@
 
 
                             <TextView
-                                android:text="Nakazených dnes:"
+                                android:text="@string/todayInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -1283,15 +1255,14 @@
 
 
                             <TextView
-                                android:text="Celkovo nakazených:"
+                                android:text="@string/totalInfected"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="center_horizontal"
                                 android:layout_weight="1"
                                 android:layout_marginTop="0dp"
-                                android:textSize="20sp"
-                                android:textColor="#fff"/>
+                                style="@style/text_views"/>
 
 
                             <TextView
@@ -1302,8 +1273,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:textColor="#FFF"/>
+                                style="@style/text_views"/>
 
                         </LinearLayout>
 
