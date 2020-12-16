@@ -112,8 +112,7 @@ public class MainActivity extends Activity {
 
 
 
-        //new JsonTask().execute("https://api.apify.com/v2/key-value-stores/GlTLAdXAuOz6bLAIO/records/LATEST?disableRedirect=true");
-        new JsonTask().execute("https://melisko.online/latest.json");
+        new JsonTask().execute("https://api.apify.com/v2/key-value-stores/GlTLAdXAuOz6bLAIO/records/LATEST?disableRedirect=true");
         final SwipeRefreshLayout pullToRefresh = findViewById(R.id.pullToRefresh);
         pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
