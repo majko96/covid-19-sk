@@ -4,9 +4,9 @@
         android:id="@+id/one"
         android:title="O aplikácii"/>
 
-    <item
-        android:id="@+id/two"
-        android:title="Ohodnotiť aplikáciu"/>
+<!--    <item-->
+<!--        android:id="@+id/two"-->
+<!--        android:title="Ohodnotiť aplikáciu"/>-->
 
     <item
         android:id="@+id/three"

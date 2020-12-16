@@ -2,12 +2,14 @@
 <resources>
 
     <string name="app_name">Covid-19 SK</string>
-    <string name="infected">Nakazených:</string>
-    <string name="todayNews">Nových dnes:</string>
-    <string name="tested">Testovaných:</string>
+    <string name="infected">PCR pozitívnych:</string>
+    <string name="tested">PCR testovaných:</string>
+    <string name="infectedAG">AG pozitívnych:</string>
+    <string name="testedAG">AG testovaných:</string>
     <string name="recovered">Vyliečených:</string>
     <string name="deceased">Úmrtí:</string>
-    <string name="todayInfected">Nakazených dnes:</string>
-    <string name="totalInfected">Celkovo nakazených:</string>
-
+    <string name="todayInfected">Pozitívnych dnes:</string>
+    <string name="totalInfected">Celkovo pozitívnych:</string>
+    <string name="PCR">PCR TESTY</string>
+    <string name="AG">AG TESTY</string>
 </resources>

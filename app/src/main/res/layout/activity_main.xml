@@ -6,6 +6,7 @@
     android:orientation="vertical">
 
 
+
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/pullToRefresh"
             android:layout_width="match_parent"
@@ -16,19 +17,17 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbarThumbVertical="@null"
-        android:scrollbarThumbHorizontal="@null">
-
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbarThumbHorizontal="@android:color/transparent"
+        >
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical">
-
-
-
+            android:orientation="vertical"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,7 +49,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -86,7 +87,8 @@
                             android:layout_height="120dp"
                             android:src="@drawable/cr"
                             android:scaleType="centerInside"
-                            android:layout_marginLeft="100dp"/>
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="5dp"/>
 
                             <TextView
                                 android:id="@+id/date"
@@ -100,11 +102,31 @@
 
 
                         </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp" >
+
                         <View
-                            android:layout_marginTop="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
-                            android:background="#FF0000"/>
+                            android:layout_weight="1"
+                            android:background="#fff"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_weight="1"
+                            android:background="#0B4EA2"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_weight="1"
+                            android:background="#EE1C25"/>
+
+                    </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -118,50 +140,6 @@
                                 android:layout_width="10dp"
                                 android:layout_height="10dp"
                                 android:background="#ff0000"
-                                android:layout_gravity="center"
-                                />
-
-
-                            <TextView
-                                style="@style/text_views"
-                                android:text="@string/todayNews"
-                                android:layout_width="0dp"
-                                android:layout_marginLeft="5dp"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:layout_weight="1"
-                                android:layout_marginTop="0dp"
-                                android:gravity="left"
-                                android:textAlignment="gravity" />
-
-
-                            <TextView
-                                android:id="@+id/newTotal"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:layout_marginTop="0dp"
-                                android:layout_weight="1"
-                                android:text=""
-                                android:textSize="20sp"
-                                android:gravity="center"
-                                android:textAlignment="gravity"
-                                android:textColor="#FF0000"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp" >
-
-                            <ImageView
-                                android:layout_width="10dp"
-                                android:layout_height="10dp"
-                                android:background="#6B5B95"
                                 android:layout_gravity="center"
                                 />
 
@@ -186,10 +164,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginTop="0dp"
-                                android:layout_weight="1"
-                                android:text=""
-                                android:textSize="20sp"
-                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:layout_weight="1.1"
+                                android:textSize="18sp"
+                                android:gravity="left"
                                 android:textAlignment="gravity"
                                 android:textColor="#fff"/>
 
@@ -206,7 +184,7 @@
                             <ImageView
                                 android:layout_width="10dp"
                                 android:layout_height="10dp"
-                                android:background="#EFC050"
+                                android:background="#FFFF00"
                                 android:layout_gravity="center"
                                 />
 
@@ -231,10 +209,67 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginTop="0dp"
-                                android:layout_weight="1"
+                                android:paddingLeft="15dp"
+                                android:layout_weight="1.1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:gravity="left"
+                                android:textAlignment="gravity"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"/>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#ff0000"
+                                android:layout_gravity="center"
+                                />
+
+
+
+                            <TextView
+                                android:text="@string/infectedAG"
+                                style="@style/text_views"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                android:gravity="left"
+                                android:textAlignment="gravity" />
+
+
+                            <TextView
+                                android:id="@+id/txt_infectedAG"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:paddingLeft="15dp"
+                                android:layout_weight="1.1"
+                                android:text=""
+                                android:textSize="18sp"
+                                android:gravity="left"
                                 android:textAlignment="gravity"
                                 android:textColor="#fff"/>
 
@@ -251,7 +286,61 @@
                             <ImageView
                                 android:layout_width="10dp"
                                 android:layout_height="10dp"
-                                android:background="#009B77"
+                                android:background="#FFFF00"
+                                android:layout_gravity="center"
+                                />
+
+
+
+                            <TextView
+                                android:text="@string/testedAG"
+                                style="@style/text_views"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:layout_marginTop="0dp"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/txt_testedAG"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="0dp"
+                                android:paddingLeft="15dp"
+                                android:layout_weight="1.1"
+                                android:text=""
+                                android:textSize="18sp"
+                                android:gravity="left"
+                                android:textAlignment="gravity"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="#FF0000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#00FF00"
                                 android:layout_gravity="center"
                                 />
 
@@ -275,10 +364,11 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginTop="0dp"
-                                android:layout_weight="1"
+                                android:paddingLeft="15dp"
+                                android:layout_weight="1.1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:gravity="left"
                                 android:textAlignment="gravity"
                                 android:textColor="#fff"/>
 
@@ -318,12 +408,14 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginTop="0dp"
-                                android:layout_weight="1"
+                                android:paddingLeft="15dp"
+                                android:layout_weight="1.1"
                                 android:text=""
-                                android:textSize="20sp"
-                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:gravity="left"
                                 android:textAlignment="gravity"
                                 android:textColor="#fff"/>
+
 
 
                         </LinearLayout>
@@ -348,8 +440,46 @@
 
             </LinearLayout>
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginLeft="5dp" >-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/card11"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardUseCompatPadding="true"-->
+<!--                app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:layout_marginLeft="8dp">-->
 
 
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/sections_layout"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--&lt;!&ndash;                     Your Section:: RecyclerView and other Views &ndash;&gt;-->
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:id="@+id/recyclerView"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+<!--        </LinearLayout>-->
 
 
 
@@ -388,7 +518,7 @@
                             android:gravity="center_horizontal"
                             android:layout_weight="1"
                             android:layout_marginTop="0dp"
-                            android:textSize="20sp"
+                            style="@style/text_views"
                             android:textColor="#fff"/>
 
 
@@ -421,7 +551,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
+                                style="@style/text_views"
                                 android:textColor="#FF0000"/>
 
                         </LinearLayout>
@@ -471,6 +601,8 @@
 
 
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -538,7 +670,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
+                                style="@style/text_views"
                                 android:textColor="#FF0000"/>
 
                         </LinearLayout>
@@ -587,6 +719,7 @@
 
 
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -654,7 +787,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
+                                style="@style/text_views"
                                 android:textColor="#FF0000"/>
 
                         </LinearLayout>
@@ -704,6 +837,9 @@
 
 
             </LinearLayout>
+
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -771,7 +907,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
+                                style="@style/text_views"
                                 android:textColor="#FF0000"/>
 
                         </LinearLayout>
@@ -888,7 +1024,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
+                                style="@style/text_views"
                                 android:textColor="#FF0000"/>
 
                         </LinearLayout>
@@ -1005,7 +1141,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
+                                style="@style/text_views"
                                 android:textColor="#FF0000"/>
 
                         </LinearLayout>
@@ -1122,7 +1258,7 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
+                                style="@style/text_views"
                                 android:textColor="#FF0000"/>
 
                         </LinearLayout>
@@ -1239,10 +1375,11 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_weight="1"
                                 android:text=""
-                                android:textSize="20sp"
+                                style="@style/text_views"
                                 android:textColor="#FF0000"/>
 
                         </LinearLayout>
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1287,59 +1424,162 @@
 
                 </com.google.android.material.card.MaterialCardView>
 
-
-
             </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp">
-
-
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card9"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardUseCompatPadding="true"
-                app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp">
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" >
 
 
-                <LinearLayout
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card11"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp">
 
 
-                    <!-- Media -->
-                    <WebView
-                        android:id="@+id/webview"
+
+                    <LinearLayout
+                        android:id="@+id/sections_layout"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                    </WebView>
+                        <TextView
+                            android:text="Mestá"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="0dp"
+                            style="@style/text_views"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
 
 
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/txtName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left"
+                                android:textSize="17sp"
+                                android:text="Názov"
+                                android:layout_weight="5.5"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#fff"/>
 
-            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:id="@+id/txtDistance"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:text="Celkovo"
+                                android:layout_weight="2"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="17sp"
+                                android:textColor="#fff"/>
+
+                            <TextView
+                                android:id="@+id/txtToday"
+                                android:layout_width="0dp"
+                                android:text="Dnes"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="right"
+                                android:layout_weight="1.5"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="17sp"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+
+                        <!--                     Your Section:: RecyclerView and other Views -->
+
+                        <ScrollView
+                            android:fillViewport="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+                        </ScrollView>
 
 
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginLeft="5dp">-->
+
+
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/card9"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardUseCompatPadding="true"-->
+<!--                app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.MediumComponent"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:layout_marginLeft="8dp">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+
+<!--                    &lt;!&ndash; Media &ndash;&gt;-->
+<!--                    <WebView-->
+<!--                        android:id="@+id/webview"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                    </WebView>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--        </LinearLayout>-->
         </LinearLayout>
-        </LinearLayout>
+
 
 
 
     </ScrollView>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 </LinearLayout>
+
 
 
 
