@@ -236,7 +236,7 @@ public class MainActivity extends Activity {
 
                 txtDeceased.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("deceased")))+"<sup><small>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newDeceased")))+"</small></sup>"));
                 txtRecovered.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("recovered")))+"<sup><small><font color='#00FF00'>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newRecovered")))+"</font></small></sup>"));
-                txt_tested.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("testedPCR")))+"<sup><small><font color='#FFFF00'>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newTestedAG")))+"</font></small></sup>"));
+                txt_tested.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("testedPCR")))+"<sup><small><font color='#FFFF00'>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newTestedPCR")))+"</font></small></sup>"));
                 txt_infected.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("infectedPCR")))+"<sup><small><font color='red'>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newInfectedPCR")))+"</font></small></sup>"));
 
                 txt_testedAG.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("testedAG")))+"<sup><small><font color='#FFFF00'>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newTestedAG")))+"</font></small></sup>"));
