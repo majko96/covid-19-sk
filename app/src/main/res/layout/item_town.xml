@@ -28,7 +28,6 @@
 
 
 
-
         <TextView
             android:id="@+id/txtInfectedTown"
             android:layout_width="0dp"

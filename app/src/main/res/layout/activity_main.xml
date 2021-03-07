@@ -340,50 +340,6 @@
                             <ImageView
                                 android:layout_width="10dp"
                                 android:layout_height="10dp"
-                                android:background="#00FF00"
-                                android:layout_gravity="center"
-                                />
-
-
-
-                            <TextView
-                                android:text="@string/recovered"
-                                style="@style/text_views"
-                                android:layout_width="0dp"
-                                android:layout_marginLeft="5dp"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:gravity="left"
-                                android:layout_weight="1"
-                                android:layout_marginTop="0dp" />
-
-
-                            <TextView
-                                android:id="@+id/txtRecovered"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:layout_marginTop="0dp"
-                                android:paddingLeft="15dp"
-                                android:layout_weight="1.1"
-                                android:text=""
-                                android:textSize="18sp"
-                                android:gravity="left"
-                                android:textAlignment="gravity"
-                                android:textColor="#fff"/>
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp" >
-
-                            <ImageView
-                                android:layout_width="10dp"
-                                android:layout_height="10dp"
                                 android:background="#DFCFBE"
                                 android:layout_gravity="center"
                                 />

@@ -40,8 +40,11 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.NumberFormat;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -54,8 +57,6 @@ public class MainActivity extends Activity {
     private RecyclerView recyclerView;
     private TownAdapter adapter;
     private ArrayList<Towns> townsArrayList;
-
-
 
 
     @Override
@@ -128,7 +129,6 @@ public class MainActivity extends Activity {
         txt_tested = (TextView) findViewById(R.id.txt_tested);
         txt_infectedAG = (TextView) findViewById(R.id.txt_infectedAG);
         txt_testedAG = (TextView) findViewById(R.id.txt_testedAG);
-        txtRecovered = (TextView) findViewById(R.id.txtRecovered);
         txtDeceased = (TextView) findViewById(R.id.txtDeceased);
         region1 = (TextView) findViewById(R.id.region1);
         new1 = (TextView) findViewById(R.id.new1);
@@ -231,11 +231,11 @@ public class MainActivity extends Activity {
                 Configuration sysConfig = getResources().getConfiguration();
                 Locale curLocale = sysConfig.locale;
                 NumberFormat nf = NumberFormat.getInstance(curLocale);
-
-                dateUpdate.setText("Dáta zo dňa: \n" + jObj.getString("updated"));
+                String dat = ("Dáta zo dňa: \n" + jObj.getString("lastUpdatedAtSource"));
+                dateUpdate.setText("Dáta zo dňa: \n" + jObj.getString("lastUpdatedAtSource"));
 
                 txtDeceased.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("deceased")))+"<sup><small>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newDeceased")))+"</small></sup>"));
-                txtRecovered.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("recovered")))+"<sup><small><font color='#00FF00'>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newRecovered")))+"</font></small></sup>"));
+
                 txt_tested.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("testedPCR")))+"<sup><small><font color='#FFFF00'>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newTestedPCR")))+"</font></small></sup>"));
                 txt_infected.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("infectedPCR")))+"<sup><small><font color='red'>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newInfectedPCR")))+"</font></small></sup>"));
 
@@ -245,28 +245,28 @@ public class MainActivity extends Activity {
 
                 region1.setText(arr.getJSONObject(0).getString("region"));
                 new1.setText(arr.getJSONObject(0).getString("newInfected"));
-                totalInfected1.setText(arr.getJSONObject(0).getString("totalInfected"));
+                totalInfected1.setText(nf.format(new Integer(arr.getJSONObject(0).getString("totalInfected"))));
                 region2.setText(arr.getJSONObject(1).getString("region"));
                 new2.setText(arr.getJSONObject(1).getString("newInfected"));
-                totalInfected2.setText(arr.getJSONObject(1).getString("totalInfected"));
+                totalInfected2.setText(nf.format(new Integer(arr.getJSONObject(1).getString("totalInfected"))));
                 region3.setText(arr.getJSONObject(2).getString("region"));
                 new3.setText(arr.getJSONObject(2).getString("newInfected"));
-                totalInfected3.setText(arr.getJSONObject(2).getString("totalInfected"));
+                totalInfected3.setText(nf.format(new Integer(arr.getJSONObject(2).getString("totalInfected"))));
                 region4.setText(arr.getJSONObject(3).getString("region"));
                 new4.setText(arr.getJSONObject(3).getString("newInfected"));
-                totalInfected4.setText(arr.getJSONObject(3).getString("totalInfected"));
+                totalInfected4.setText(nf.format(new Integer(arr.getJSONObject(3).getString("totalInfected"))));
                 region5.setText(arr.getJSONObject(4).getString("region"));
                 new5.setText(arr.getJSONObject(4).getString("newInfected"));
-                totalInfected5.setText(arr.getJSONObject(5).getString("totalInfected"));
+                totalInfected5.setText(nf.format(new Integer(arr.getJSONObject(4).getString("totalInfected"))));
                 region6.setText(arr.getJSONObject(5).getString("region"));
                 new6.setText(arr.getJSONObject(5).getString("newInfected"));
-                totalInfected6.setText(arr.getJSONObject(5).getString("totalInfected"));
+                totalInfected6.setText(nf.format(new Integer(arr.getJSONObject(5).getString("totalInfected"))));
                 region7.setText(arr.getJSONObject(6).getString("region"));
                 new7.setText(arr.getJSONObject(6).getString("newInfected"));
-                totalInfected7.setText(arr.getJSONObject(6).getString("totalInfected"));
+                totalInfected7.setText(nf.format(new Integer(arr.getJSONObject(6).getString("totalInfected"))));
                 region8.setText(arr.getJSONObject(7).getString("region"));
                 new8.setText(arr.getJSONObject(7).getString("newInfected"));
-                totalInfected8.setText(arr.getJSONObject(7).getString("totalInfected"));
+                totalInfected8.setText(nf.format(new Integer(arr.getJSONObject(7).getString("totalInfected"))));
 
 
                 JSONArray dist = jObj.getJSONArray("districts");
