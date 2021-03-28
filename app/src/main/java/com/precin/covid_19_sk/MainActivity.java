@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
@@ -20,6 +21,7 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -39,7 +41,12 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.DateFormat;
 import java.text.NumberFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -47,6 +54,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.TimeZone;
 
 
 public class MainActivity extends Activity {
@@ -214,6 +222,7 @@ public class MainActivity extends Activity {
             return null;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
@@ -231,8 +240,12 @@ public class MainActivity extends Activity {
                 Configuration sysConfig = getResources().getConfiguration();
                 Locale curLocale = sysConfig.locale;
                 NumberFormat nf = NumberFormat.getInstance(curLocale);
-                String dat = ("Dáta zo dňa: \n" + jObj.getString("lastUpdatedAtSource"));
-                dateUpdate.setText("Dáta zo dňa: \n" + jObj.getString("lastUpdatedAtSource"));
+                String d = jObj.getString("lastUpdatedAtSource");
+                Date date = Date.from( Instant.parse( d ));
+                SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy", Locale.UK);
+                String formattedDate = sdf.format(date);
+
+                dateUpdate.setText("Dáta zo dňa: \n" + formattedDate);
 
                 txtDeceased.setText(Html.fromHtml(nf.format(new Integer(jObj.getString("deceased")))+"<sup><small>\t&nbsp;+"+nf.format(new Integer(jObj.getString("newDeceased")))+"</small></sup>"));
 

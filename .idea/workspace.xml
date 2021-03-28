@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="tag" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="myTa" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BranchesTreeState">
@@ -28,24 +28,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028759b5-0169-43f9-8362-5875772df255" name="Default Changelist" comment="edit table UI">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+    <list default="true" id="028759b5-0169-43f9-8362-5875772df255" name="Default Changelist" comment="update to new json formatted api">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/precin/covid_19_sk/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/precin/covid_19_sk/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_town.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_town.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609855571580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update to new json formatted api">
+      <created>1615105989099</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615105989099</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,33 +214,38 @@
     <MESSAGE value="edit Json source page" />
     <MESSAGE value="added missing files" />
     <MESSAGE value="edit table UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit table UI" />
+    <MESSAGE value="update to new json formatted api" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to new json formatted api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="635" y="250" width="430" height="481" key="FileChooserDialogImpl" timestamp="1610885446861">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="635" y="250" width="430" height="481" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1610885446861" />
-    <state width="1878" height="252" key="GridCell.Tab.0.bottom" timestamp="1615104767550">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="252" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615104767550" />
-    <state width="1878" height="252" key="GridCell.Tab.0.center" timestamp="1615104767548">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="252" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615104767548" />
-    <state width="1878" height="252" key="GridCell.Tab.0.left" timestamp="1615104767547">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="252" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615104767547" />
-    <state width="1878" height="252" key="GridCell.Tab.0.right" timestamp="1615104767549">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="252" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615104767549" />
-    <state x="2475" y="258" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1609855578479">
+    <state width="1878" height="302" key="GridCell.Tab.0.bottom" timestamp="1616961480493">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="258" width="806" height="525" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1608142122749" />
+    <state width="1878" height="252" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615104767550" />
+    <state width="1878" height="302" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1616961480493" />
+    <state width="1878" height="302" key="GridCell.Tab.0.center" timestamp="1616961480493">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="252" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615104767548" />
+    <state width="1878" height="302" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1616961480493" />
+    <state width="1878" height="302" key="GridCell.Tab.0.left" timestamp="1616961480492">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="252" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615104767547" />
+    <state width="1878" height="302" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1616961480492" />
+    <state width="1878" height="302" key="GridCell.Tab.0.right" timestamp="1616961480493">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="252" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615104767549" />
+    <state width="1878" height="302" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1616961480493" />
+    <state x="555" y="258" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1615106005149">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="258" width="806" height="525" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1615106005149" />
     <state x="2475" y="258" width="806" height="525" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1609855578479" />
   </component>
 </project>
